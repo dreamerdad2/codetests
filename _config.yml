@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
+url: "https://vmrcommunications.github.io"
 plugins:
   - jekyll-sitemap
