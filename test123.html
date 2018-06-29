@@ -1,7 +1,135 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!--place this in head on every page-->
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<!--- UNDERDOGMEDIA EDGE EDGE_CruxNow.com JavaScript ADCODE END--->
+
+
+<script>
+ // GPT slots
+ var gptAdSlots = [];
+ googletag.cmd.push(function() {
+ 
+   // Define a size mapping object. The first parameter to addSize is
+   // a viewport size, while the second is a list of allowed ad sizes.
+   
+   // This mapping will only display ads when user is on mobile or tablet sized viewport
+var mapping4pencil = googletag.sizeMapping().
+  addSize([1050, 200], [970, 33]). // Desktop
+  addSize([0, 0], []).  // Dont show ad for tablet and smartphone
+  build();
+  
+var mapping4centerrectangle1 = googletag.sizeMapping().
+  addSize([1050, 200], [600, 250]). // Desktops will display 300x250
+  addSize([700, 200], [230, 192]). // Tablet
+  addSize([320, 200], [300, 250]). // Smartphone
+  addSize([0, 0], []).
+  build();
+
+// This mapping will only display ads when user is on mobile or tablet sized viewport
+var mapping4centerrectangle2 = googletag.sizeMapping().
+  addSize([1050, 200], [600, 250]).   // Desktops will display only 600x250
+  addSize([700, 200], [230, 192]). // Tablet
+  addSize([320, 200], [300, 250]). // Smartphone
+  addSize([0, 0], []).
+  build();
+  
+  var mapping4centerdisplay3 = googletag.sizeMapping().
+  addSize([1050, 200], [[600, 250], [300, 250]]). // Desktops will display either 600x250 or 300x250 
+  addSize([700, 200], [230, 192]). // Tablet 
+  addSize([320, 200], [300, 250]). // Smartphone 
+  addSize([0, 0], []). 
+  build(); 
+  
+  var mapping4rightdisplay1 = googletag.sizeMapping().
+  addSize([1050, 200], [300, 250]). // Show 300x250 for desktop
+  addSize([700, 200], [230, 192]). // Show 230x192 for tablet
+  addSize([320, 200], [300, 250]). // Show 300x250 for smartphone
+  addSize([0, 0], []).
+  build();
+  
+  var mapping4rightdisplay2 = googletag.sizeMapping().
+  addSize([1050, 200], [300, 250]). // Show 300x250 for desktop
+  addSize([700, 200], [230, 192]). // Show 230x192 for tablet
+  addSize([320, 200], [300, 250]). // Show 300x250 for smartphone
+  addSize([0, 0], []).
+  build();
+
+  var mapping4Rightdisplay3 = googletag.sizeMapping().
+  addSize([1050, 200], [[300, 250], [230, 192]]). // Desktops will display either 300x250 or 230x192
+  addSize([700, 200], [300, 250]). // Tablet
+  addSize([320, 200], [[300, 250], [230, 192]]). // Smartphone
+  addSize([0, 0], []).
+  build();
+  
+gptAdSlots[0] =  googletag.defineSlot('/4580722/CruxNow.com_PencilDisplay', [970,33], 'pencil888').
+  defineSizeMapping(mapping4pencil).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+  
+  gptAdSlots[1] =  googletag.defineSlot('/4580722/CruxNow.com_CenterRectangle1', [[600,250],[230,192],[300,250]], 'centerrectangle1888').
+  defineSizeMapping(mapping4centerrectangle1).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+  
+  gptAdSlots[2] =  googletag.defineSlot('/4580722/CruxNow.com_CenterRectangle2', [[600,250],[230,192],[300,250]], 'centerrectangle2888').
+  defineSizeMapping(mapping4centerrectangle2).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+  
+  gptAdSlots[3] =  googletag.defineSlot('/4580722/CruxNow.com_CenterDisplay3', [[600,250],[230,192],[300,250]], 'CenterDisplay3888').
+  defineSizeMapping(mapping4centerdisplay3).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+  
+  gptAdSlots[4] =  googletag.defineSlot('/4580722/CruxNow.com_RightDisplay1', [[300,250],[230,192]], 'RightDisplay1888').
+  defineSizeMapping(mapping4rightdisplay1).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+  
+  gptAdSlots[5] =  googletag.defineSlot('/4580722/CruxNow.com_RightDisplay2', [[300,250],[230,192]], 'RightDisplay2888').
+  defineSizeMapping(mapping4rightdisplay2).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+
+  gptAdSlots[6] = googletag.defineSlot('/4580722/CruxNow.com_RightDisplay3', [[300,250],[230,192]], 'RightDisplay3'). 
+  defineSizeMapping(mapping4Rightdisplay3). 
+  setCollapseEmptyDiv(true). 
+  addService(googletag.pubads()); 
+  gptAdSlots[7] = googletag.defineSlot('/4580722/cruxtestadunit', [1,1], 'cruxtestadunit'). 
+  setCollapseEmptyDiv(true). 
+  addService(googletag.pubads()); 
+  // Start ad fetching
+googletag.enableServices();
+ });
+</script>
+ <!-- End of head portion of tag -->
+
+  </head>
 <body>
-<div id="Brid_19401519" class="brid" itemprop="video" itemscope itemtype="http://schema.org/VideoObject"></div> <script type="text/javascript"> var _bos = _bos||[]; _bos.push({ "div": "Brid_19401519", "obj": {"id":"5166","width":"300","height":"250"}	}); </script> <script type="text/javascript" async src="//services.brid.tv/player/build/brid.outstream.min.js"></script>
+<!-- DFP 1x1adtestcode -->
+<div id="cruxtestadunit"> 
+   <script>
+     googletag.cmd.push(function() {
+       googletag.display('cruxtestadunit');
+     });
+   </script> 
+</div>
 <h1>My First Heading</h1>
   edit123
 
