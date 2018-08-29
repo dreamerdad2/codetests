@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>var googletag = window.googletag || {cmd: []};</script>
+<script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
+<script>
+googletag.cmd.push(function() {
+  googletag.defineSlot('/4580722/WDTPRS.com_180x150_', [180,150], 'div-1').
+    addService(googletag.pubads());
+  // Some examples of ways to enable below. Normally, only one of these
+  // methods should be used.
+
+  // A) Enable with defaults.
+  googletag.pubads().enableLazyLoad();
+
+  
+  googletag.enableServices();
+});
+</script>
+</head>
+<body>
+
+<!-- 
+     As defined by lazy load settings, initially Slot 1 will be fetched and
+     rendered on mobile and desktop. Slot 2 will be fetched, on mobile and
+     desktop, but will not be rendered on desktop. Slot 3 will not be fetched
+     or rendered on mobile and desktop.
+-->
+
+<div id="div-1">
+  <script>
+    googletag.cmd.push(function() {googletag.display('div-1');});
+  </script>
+  
+</div>
+<!-- 3 viewport tall div to place next slot 3 viewports away. -->
+<!--<div style="height:300vh"></div>
+//<div id="div-2">
+  //<script>
+    googletag.cmd.push(function() {googletag.display('div-2');});
+  </script>
+</div>
+-->
+<!-- 9 viewport tall div to place next slot 12 viewports away. -->
+<!--<div style="height:900vh"></div>
+<div id="div-3">
+  <script>
+    googletag.cmd.push(function() {googletag.display('div-3');});
+  </script>
+</div>-->
+</body>
+</html>
