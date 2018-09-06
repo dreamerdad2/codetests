@@ -1,0 +1,52 @@
+<!-- START ****CAN HPR 300x250 VIEWABLE-ONLY TAG **** -->
+<script async src="//www.googletagservices.com/tag/js/gpt.js">
+googletag = window.googletag || {cmd: []};
+var topSlot, bottomSlot; +       googletag.cmd.push(function() {
+        bottomSlot = googletag.defineSlot('/4580722/HPRWeb.com_300x250_BTF_Standard1', [300, 250], 'CANAd').addService(googletag.pubads());
+        googletag.pubads().disableInitialLoad();
+        googletag.enableServices();
+      });
+// All below is Copyright 2017-2018 VMR Communications LLC. All Rights Reserved. 
+googletag.cmd.push(function() {
+          // This will only register the slot. Ad will be fetched only 
+          // when refresh is called.
+          googletag.display('CANAd');
+        });
+      // Refresh the bottom slot when it is about to come into view.
+      var adLoaded = false;
+      var $elm = document.getElementById("CANAd");
+      function elmInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          var elemTop = rect.top;
+          var elemBottom = rect.bottom;
+          // divide by 1 will result in the div being written to the page when the div FIRST comes into view
+          // divide by 2 will result in the div being written to the page when the div is 50% in view
+          var isVisible = (elemTop >= 0) && ((elemBottom - rect.height / 1) <= window.innerHeight);
+          return isVisible;
+      }
+      var _debounceTimer = null;
+      function debounce(cb) {
+          return function () {
+            clearTimeout(_debounceTimer);
+          // lowering debounce timer will allow the div to load sooner but will use more cpu usage
+          // increasing debounce will cause the div to load a bit later but will use fewer resources
+            _debounceTimer = setTimeout(cb, 300);  
+          };
+      }
+      var listener = debounce(function() {
+        if (elmInViewport($elm) && !adLoaded) {
+          googletag.cmd.push(function() {
+            googletag.pubads().refresh([bottomSlot]);
+          });
+          
+          // Refresh the ad only once.
+          adLoaded = true;
+
+          // Remove the listener now.
+          window.removeEventListener('scroll', listener);
+        }
+      });
+      window.addEventListener('scroll', listener);
+      listener();                                      </script>
+
+<div id="CANAd" style="width: 300px;"></div>
