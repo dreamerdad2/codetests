@@ -122,7 +122,7 @@ googletag.cmd.push(function() {
           var elemBottom = rect.bottom;
           // divide by 1 will result in the div being written to the page when the div FIRST comes into view
           // divide by 2 will result in the div being written to the page when the div is 50% in view
-          var isVisible = (elemTop >= 0) && ((elemBottom - rect.height / 1) <= window.innerHeight);
+          var isVisible = (elemTop >= 0) && ((elemBottom - rect.height / 2) <= window.innerHeight);
           return isVisible;
       }
       var _debounceTimer = null;
