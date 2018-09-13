@@ -1,5 +1,16 @@
 <html>
 <head>
+  <style>
+div.rel {
+    position: relative;
+    border: 3px solid #73AD21;
+  height:1200px;
+}
+    div.abs {
+    position: absolute;
+    border: 3px solid #73AD21;
+}
+</style>
 <script>var googletag = window.googletag || {cmd: []};</script>
 <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
 <script>
@@ -20,7 +31,7 @@ googletag.cmd.push(function() {
 </script>
 </head>
 <body>
-<div style="height:1200px">
+<div class="rel">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit turpis, venenatis sed iaculis et, scelerisque in quam. Nunc quis ex arcu. Curabitur ultrices ut nunc eu semper. Aliquam egestas turpis sit amet tellus aliquam, sed tincidunt lorem interdum. Vivamus non maximus metus. Ut sit amet laoreet libero, non dapibus enim. Quisque a lacinia erat. Phasellus pulvinar tincidunt lectus. In sit amet sem vel magna imperdiet rutrum in a sem. Sed felis nibh, varius vitae est quis, blandit rhoncus nulla. Etiam maximus, arcu eu fermentum mollis, turpis orci ultrices nunc, fringilla hendrerit leo elit nec dui. Quisque nec molestie libero, vel egestas enim. Fusce a ex mi. Integer vitae magna pharetra, placerat tortor ut, dictum enim.
 
 Donec tincidunt auctor erat, ut egestas erat mollis eu. Nam auctor neque non luctus fringilla. Phasellus vitae felis eget tellus porttitor congue ac et orci. Etiam molestie feugiat mi sit amet malesuada. Nulla volutpat, felis ut commodo pellentesque, nisi dui aliquam urna, et scelerisque tellus ante quis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras pharetra arcu vitae mi gravida blandit ac quis risus. Nam sit amet arcu non tortor aliquam dignissim a nec sapien. Proin est est, elementum in accumsan eu, imperdiet sed urna. Aliquam erat volutpat.
@@ -74,7 +85,7 @@ Etiam nec pellentesque odio, eu dapibus turpis. Curabitur eu libero a turpis imp
 
 Duis auctor tristique lectus sit amet cursus. Morbi posuere metus a lobortis scelerisque. Fusce et semper velit, sed ornare eros. Proin id tempor arcu, at accumsan est. Cras volutpat vel sapien ut pulvinar. Donec finibus metus et augue viverra, sed sodales erat gravida. Cras nisi risus, bibendum vitae rhoncus eu, congue sit amet orci. Aliquam erat volutpat. Nam consectetur dolor felis, eu vehicula sem auctor vitae. Nulla vitae consequat velit. In vel suscipit orci. Proin in lectus bibendum quam porttitor egestas. Aliquam gravida rhoncus venenati
   </div>
-<div id="div-1">
+<div id="div-1" class="abs">
   <script>
     googletag.cmd.push(function() {googletag.display('div-1');});
   </script>
