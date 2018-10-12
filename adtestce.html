@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--place this in head on every page-->
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script>
+ // GPT slots
+ var gptAdSlots = [];
+ googletag.cmd.push(function() {
+ 
+   // Define a size mapping object. The first parameter to addSize is
+   // a viewport size, while the second is a list of allowed ad sizes.
+   
+   
+var mappingCoraEvans1 = googletag.sizeMapping().
+  addSize([1024, 0], [300, 250]). // Desktop
+  addSize([768, 0], [300, 250]).// Dont show ad for tablet 
+  addSize([0, 0], [300, 250]).  //smartphone
+  build();
+  
+var mappingCoraEvans2 = googletag.sizeMapping().
+  addSize([1024, 0], [300, 600]). // Desktop
+  addSize([768, 0], [300, 600]).// Tablet 
+  addSize([0, 0], [300, 600]).  //smartphone
+  build();
+
+
+var mappingCoraEvans3 = googletag.sizeMapping().
+  addSize([1024, 0], [160, 600]). // Desktop
+  addSize([768, 0], [160, 600]).// Tablet 
+  addSize([0, 0], []).  //smartphone
+  build();
+  
+var mappingCoraEvans4 = googletag.sizeMapping().
+  addSize([1024, 0], [728, 90]). // Desktop
+  addSize([768, 0], [728, 90]).// Tablet 
+  addSize([0, 0], []).  //smartphone
+  build();
+
+var mappingCoraEvans5 = googletag.sizeMapping().
+  addSize([1024, 0], []). // Desktop
+  addSize([768, 0], []).// Tablet 
+  addSize([0, 0], [320, 50]).  //smartphone
+  build();
+
+  
+gptAdSlots[0] =  googletag.defineSlot('/4580722/CoraEvans.com_1', [300,250], 'CAN_CoraEvans.com_1').setTargeting('POS', ['RR1']).
+  defineSizeMapping(mappingCoraEvans1).
+  addService(googletag.pubads());
+  
+  gptAdSlots[1] =  googletag.defineSlot('/4580722/CoraEvans.com_2', [300,600], 'CAN_CoraEvans.com_2').setTargeting('POS', ['RR2']).
+  defineSizeMapping(mappingCoraEvans2).
+  addService(googletag.pubads());
+  
+  gptAdSlots[2] =  googletag.defineSlot('/4580722/CoraEvans.com_3', [[160,600]], 'CAN_CoraEvans.com_3').setTargeting('POS', ['LR1']).
+  defineSizeMapping(mappingCoraEvans3).
+  addService(googletag.pubads());
+  
+  gptAdSlots[3] =  googletag.defineSlot('/4580722/CoraEvans.com_4', [[728,90]], 'CAN_CoraEvans.com_4').setTargeting('POS', ['ATF']).
+  defineSizeMapping(mappingCoraEvans4).
+  addService(googletag.pubads());
+  
+  gptAdSlots[4] =  googletag.defineSlot('/4580722/CoraEvans.com_5', [[320,50]], 'CAN_CoraEvans.com_5').setTargeting('POS', ['BTF']).
+  defineSizeMapping(mappingCoraEvans5).
+  addService(googletag.pubads());
+  
+   // C) Enable lazy loading with...
+  googletag.pubads().enableLazyLoad({
+    fetchMarginPercent: 500,  // Fetch slots within 1 viewports.
+    renderMarginPercent: 0,  // Render slot when ad unit is 50% in view??
+    mobileScaling: 2.0  // Double the above values on mobile.
+  });
+  
+  // Start ad fetching
+googletag.enableServices();
+ });
+</script>
+ <!-- End of head portion of tag -->
+ </head>
+<body>
+
+
+ <!-- Below are the ad units. place each div where it belongs in the body of the source code where you want the ad to display -->
+<!-- CAN_CoraEvans.com_1 -->
+<div id="CAN_CoraEvans.com_1"> 
+   <script>
+     googletag.cmd.push(function() {
+       googletag.display('CAN_CoraEvans.com_1');
+     });
+   </script> 
+</div>
+<!-- <div style="height:300vh"></div> -->
+<!-- CAN_CoraEvans.com_2 -->
+<div id="CAN_CoraEvans.com_2"> 
+   <script>
+     googletag.cmd.push(function() {
+       googletag.display('CAN_CoraEvans.com_2');
+     });
+   </script> 
+</div>
+<!-- <div style="height:500vh"></div> -->
+<!-- CAN_CoraEvans.com_3 -->
+<div id="CAN_CoraEvans.com_3"> 
+   <script>
+     googletag.cmd.push(function() {
+       googletag.display('CAN_CoraEvans.com_3');
+     });
+   </script> 
+</div>
+
+<!-- <div style="height:700vh"></div> -->
+<div id="CAN_CoraEvans.com_4"> 
+   <script>
+     googletag.cmd.push(function() {
+       googletag.display('CAN_CoraEvans.com_4');
+     });
+   </script> 
+</div>
+
+
+<!-- <div style="height:900vh"></div> -->
+<div id="CAN_CoraEvans.com_5"> 
+   <script>
+     googletag.cmd.push(function() {
+       googletag.display('CAN_CoraEvans.com_5');
+     });
+   </script> 
+</div>
+</body>
+</html>
